@@ -214,4 +214,13 @@ class StickBarToLeftView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : StickBarToLeftView {
+            val view : StickBarToLeftView = StickBarToLeftView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
