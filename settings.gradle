@@ -1,0 +1,3 @@
+include ':stickbartoleftview'
+include ':app'
+rootProject.name = "LinkedStickBarToLeftView"
