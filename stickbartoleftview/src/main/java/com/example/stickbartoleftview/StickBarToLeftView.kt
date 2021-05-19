@@ -134,7 +134,7 @@ class StickBarToLeftView(ctx : Context) : View(ctx) {
         private var prev : SBTLNode? = null
 
         init {
-
+            addNeighbor()
         }
 
         fun addNeighbor() {
