@@ -48,7 +48,9 @@ fun Canvas.drawStickBarToLeft(scale : Float, w : Float, h : Float, paint : Paint
         translate(-w * 0.5f * sf3, 0f)
         rotate(deg * sf3)
         drawRect(RectF(-size * sf1, -size / 2, 0f, size /2), paint)
-        drawLine(-size - lSize * sf2, 0f, -size, 0f, paint)
+        if (sf2 > 0f) {
+            drawLine(-size - lSize * sf2, 0f, -size, 0f, paint)
+        }
         restore()
         restore()
     }
